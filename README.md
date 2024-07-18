@@ -12,7 +12,7 @@ in the sourcecode everything written on the left is the instruction and on the r
 
 Step 1. Create files and folders----
 
-        mkdir nginx-image && cd nginx-image
+        cd nginx-webapp
         mkdir files
 
 Step2. Create a sample Html file and config file---
@@ -62,7 +62,7 @@ Step 3. Choose a Base image---
 
 FROM command is used to instruct Docker to create an image based on an image that is available on the docker hub ....
 
-Create a Dockerfile in the nginx-image folder.
+Create a Dockerfile in the nginx-webapp folder.
 
         vi Dockerfile
 
