@@ -101,3 +101,30 @@ check the container by using the below command;
 
 Now in the browser,go to http://<host-ip>:9090 or type localhost:9090, you can see the index page which displays the content in the custom HTML page we added to the docker image.
 
+![Screenshot 2024-07-18 161430](https://github.com/user-attachments/assets/c15ef801-d813-452b-97c3-6e4b69d78cfc)
+
+
+#Push Docker Images to Docker hub----
+
+Activating the Docker hub
+
+                docker login
+![image](https://github.com/user-attachments/assets/ff473028-6ead-4131-92d8-bea73c5fb534)
+
+
+
+After succesfull login , just tag the image with the docker username as shown ----
+
+                docker tag nginx:1.0 <username>/<image-name>:tag
+
+Example;
+
+                docker tag nginx:1.0 <username>/nginx:1.0
+
+For the confirmation, just run the docker image command and check there;
+
+Now push the image to docker hub ;
+
+                docker push username/nginx:1.0
+
+Just check the image at the repository tab at the docker hub;
